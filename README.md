@@ -1,36 +1,84 @@
-<h1 align="center">MERN Crash Course 🚀</h1>
+# Product Management Dashboard
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+A full-stack MERN application to manage products — featuring create, update, and delete operations with a modern UI and RESTful backend.
 
-[Video Tutorial on Youtube](https://youtu.be/Dukz-3mS3Us)
+![Demo Screenshot](/frontend/public/screenshot-for-readme.png)
 
-About This Course:
+## Tech Stack
 
--   ⚛️ Tech Stack: React.js, Node.js, Express.js, MongoDB, Chakra UI
--   🔥 Build an API
--   📱 Responsive UI With React.js and ChakraUI
--   🐞 Error Handling
--   🌐 Deployment
--   🚀 And Many More Cool Features
--   ✅ This is a lot of work. Support my work by subscribing to the [Channel](https://www.youtube.com/@asaprogrammer_)
+- Frontend: React.js (Vite) + Chakra UI  
+- Backend: Node.js + Express.js  
+- Database: MongoDB  
+- API Architecture: RESTful
 
-### Setup .env file
+## Features
 
-```shell
-MONGO_URI=your_mongo_uri
+- Add, update, and delete products  
+- Responsive and clean UI using Chakra UI  
+- REST API for CRUD operations  
+- MongoDB for persistent data storage  
+- Production-ready frontend build with Vite
+
+## Setup Instructions
+
+### 1. Create a `.env` file in the root directory:
+
+```
+MONGO_URI=your_mongo_connection_string
 PORT=5000
 ```
 
-### Run this app locally
+### 2. Install dependencies and build the frontend:
 
-```shell
+```
+npm install
+cd frontend
+npm install
 npm run build
 ```
 
-### Start the app
+### 3. Start the server:
 
-```shell
+```
+cd ..
 npm run start
 ```
 
-### I'll see you in the next one! 🚀
+The server will run on `http://localhost:5000` and serve both the API and the frontend build.
+
+### 4. Run frontend in development mode:
+
+```
+cd frontend
+npm run dev
+```
+
+The frontend will be live at `http://localhost:5173`
+
+## Project Structure
+
+```
+Product-Management-Dashboard/
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── store/
+│       ├── App.jsx
+│       └── main.jsx
+├── .env
+├── package.json
+└── README.md
+```
+
+## Notes
+
+- Ensure MongoDB is running locally or your cloud URI is valid.
+- The server port can be configured via the `.env` file.
